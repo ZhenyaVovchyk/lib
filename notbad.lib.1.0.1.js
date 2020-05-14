@@ -7,17 +7,22 @@ const groupEnd = (x) => { this.console.groupEnd(x) };
 const timer = (x) => { this.console.time(x) };
 const timerEnd = (x) => { this.console.timeEnd(x) };
 const trace = () => { this.console.trace() };
-//               //                   //                 //         ---(>
+//      //         //          //         //        //         //         ---(>
 const d = document;
 const w = window;
 const db = document.body;
-//               //                   //                 //         ---(>
+//      //         //        //           //       //          //         ---(>
 const anim = (x) => requestAnimationFrame(x);
 const animOff = (x) => cancelAnimationFrame(x);;
-//                //                     //             //           ---(>
-const achild = (x) => { document.body.appendChild(x) };
-//                //                     //             //           ---(>
 
+// this function is adding an element to the page
+const achild = (x) => { document.body.appendChild(x) };
+
+//  this function add the event listener
+const add = (x) => { w + 'addEventListener(' + x + ',' + '=>{})' };
+
+//  this function remove the event listener
+const remove = (x) => { w + 'removeEventListener(' + x + ',' + '=>{})' };
 
 // function  to create an element , accepts 5 parameters: 
 //element to create, element width, element height, element frame color and id.
@@ -31,9 +36,6 @@ function create(elem, id, borderColor, width, height) {
     achild(el);
 }
 
-
-
-
 // returns the first element (Element) of the document that matches the specified selector or group of selectors. If no matches are found, returns null.
 function _(x) {
     return document.querySelector(x);
@@ -42,17 +44,6 @@ function _(x) {
 // returns a static (non-dynamic) NodeList containing all found elements of the document that match the specified selector. 
 function _all(x) {
     return document.querySelectorAll(x);
-}
-
-
-// this function add the event listener
-function addEvent(x, y, func) {
-    return x.addEventListener(y, func)
-}
-
-// this function removes the event listener
-function remEvent(x, y, func) {
-    return x.addEventListener(y, func)
 }
 
 function setLocStor(x, y) {
