@@ -1,4 +1,4 @@
-const log = (x) => console.log(x;
+const log = (x) => console.log(x);
 const info = (x) => console.info(x);
 const dir = (x) => console.dir(x);
 const dirXml = (x) => this.console.dirxml(x);
