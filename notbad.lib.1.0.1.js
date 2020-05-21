@@ -1,6 +1,4 @@
-
-
-const log = (g) => console.log(g);
+const log = (x) => console.log(x;
 const info = (x) => console.info(x);
 const dir = (x) => console.dir(x);
 const dirXml = (x) => this.console.dirxml(x);
@@ -10,13 +8,12 @@ const timer = (x) => console.time(x);
 const timerEnd = (x) => console.timeEnd(x);
 const trace = () => console.trace();
 
-
 const win = window;
 const doc = document;
-const qs = (g) => document.querySelector(g);
-const qsAll = (g) => document.querySelectorAll(g);
-const animOn = (g) => requestAnimationFrame(g);
-const animOff = (g) => requestAnimationFrame(g);
+const qs = (x) => document.querySelector(x);
+const qsAll = (x) => document.querySelectorAll(x);
+const animOn = (x) => requestAnimationFrame(x);
+const animOff = (x) => requestAnimationFrame(x);
 
 
 
