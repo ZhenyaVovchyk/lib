@@ -21,8 +21,7 @@ const Mf = Math.floor;
 const plus_minus = Math.floor(Math.random() * 2 + Math.random() * 1 - 1);
 
 
-let canvas = js('#canvas'), ctx = canvas.getContext('2d');
-let w = canvas.width = window.innerWidth, h = canvas.height = window.innerHeight;
+
 
 
 
