@@ -17,6 +17,7 @@ const animOff = (x) => requestAnimationFrame(x);
 
 const Mr = Math.random;
 const Mf = Math.floor;
+const Mp = Math.PI;
 //return -1 or 1 or 0
 const plus_minus = Math.floor(Math.random() * 2 + Math.random() * 1 - 1);
 
